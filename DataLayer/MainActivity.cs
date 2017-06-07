@@ -319,7 +319,7 @@ namespace DataLayer
 						return;
                     var res = await WearableClass.DataApi.PutDataItemAsync (Activity.mGoogleApiClient, request);
 					if (!res.Status.IsSuccess) {
-						Log.Error(Tag, "Failed to send message with status code: " + res.Status.StatusCode);
+						Log.Error(Tag, "Ouch!!! Failed to send message with status code: " + res.Status.StatusCode);
 					}
 				}
 			}
