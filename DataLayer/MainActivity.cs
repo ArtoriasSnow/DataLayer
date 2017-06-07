@@ -268,7 +268,7 @@ namespace DataLayer
         async Task SendStartActivityMessage(String node) {
             var res = await WearableClass.MessageApi.SendMessageAsync (mGoogleApiClient, node, StartActivityPath, new byte[0]);
     		if (!res.Status.IsSuccess) {
-				Log.Error(Tag, "Failed to send message with status code: " + res.Status.StatusCode);
+				Log.Error(Tag, " :( Failed to send message with status code: " + res.Status.StatusCode);
 			}	
 		}
 
